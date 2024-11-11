@@ -1,0 +1,18 @@
+#include <stdio.h>
+int gcd(int a, int b){
+    if(b==0){
+        return a;
+    }
+    return gcd(b,a%b);
+}
+int main(){
+    int a;
+    int b;
+    printf("value of a: ");
+    scanf("%d",&a);
+    printf("value of b: ");
+    scanf("%d",&b);
+    
+    printf("gcd fo numbers %d and %d is:%d",a,b,gcd(a,b));
+    return 0;
+}
