@@ -1,0 +1,31 @@
+#include <stdio.h>
+int sum(int a,int b){
+    return a+b;
+}
+int diff(int a,int b){
+    return a-b;
+}
+int pro(int a,int b){
+    return a*b;
+}
+int rem(int a,int b){
+    return a/b;
+}
+int mod(int a,int b){
+    return a%b;
+}
+
+int main(){
+    int a;
+    int b;
+    printf("Value of a: ");
+    scanf("%d",&a);
+    printf("Value of b: ");
+    scanf("%d",&b);
+    
+    printf("Sum of the numbers %d and %d is:%d",a,b,sum(a,b));
+    printf("\nDiff of the numbers %d and %d is:%d",a,b,diff(a,b));
+    printf("\nPro of the numbers %d and %d is:%d",a,b,pro(a,b));
+    printf("\nRem of the numbers %d and %d is:%d",a,b,rem(a,b));
+    printf("\nMod of the numbers %d and %d is:%d",a,b,mod(a,b));
+}
