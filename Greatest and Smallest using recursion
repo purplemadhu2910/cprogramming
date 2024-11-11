@@ -1,0 +1,24 @@
+#include <stdio.h>
+int greatest(int a ,int b){
+    if(a<b){
+        return b;
+    }
+}
+int smallest(int a ,int b){
+    if(a>b){
+        return a;
+    }
+}
+
+int main(){
+    int a;
+    int b;
+    printf("Value of a: ");
+    scanf("%d",&a);
+    printf("Value of b: ");
+    scanf("%d",&b);
+    
+    printf("Greatest number out of %d and %d is: %d",a,b,greatest(a,b));
+    printf("\nSmallest number out of %d and %d is: %d",a,b,smallest(a,b));
+    
+}
